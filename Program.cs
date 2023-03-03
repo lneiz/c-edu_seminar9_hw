@@ -8,4 +8,7 @@ string listN(int n)
     return  n + ", " + listN(n - 1);
 }
 
-Console.Write(listN(5));
+Console.Write("Введите N? ");
+int n = Convert.ToInt32(Console.ReadLine());
+
+Console.Write(listN(n));
